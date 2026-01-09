@@ -39,3 +39,174 @@ nav a{
     padding: 12.5px 16px;
     color: white;
 }
+
+.banner{
+    
+  background-image: url("./assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 72px;
+}
+
+.banner h2 span:nth-of-type(1){
+    font-size: 16px;
+    color: #30B868;
+   border-radius: 1000px;
+background: rgba(255, 255, 255, 1);
+padding: 6px 12px;
+}
+
+.banner h1 span:nth-of-type(1){
+    font-size: 72px;
+    color: white;
+
+}
+
+
+.banner h1 span:nth-of-type(2){
+    font-size: 72px;
+    color: #30B868;
+
+}
+
+
+.banner p{
+    font-size: 18px;
+    color: white;
+
+}
+
+.banner button:nth-of-type(1){
+    background-color: #30B868;
+    border: none;
+    border-radius: 4px;
+    padding: 12.5px 16px;
+    color: white; 
+}
+
+.banner button:nth-of-type(2){
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 12.5px 16px;
+    color: white; 
+}
+
+.banner-button-class{
+    display: flex;
+    gap:16px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.feature-section{
+    padding-top: 50px;
+}
+
+
+.card-container{
+    display:flex;
+    gap: 24px;
+}
+
+.card{
+    width: 300px;
+    height: 280px;
+    padding: 24px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-circle {
+  width: 60px;            /* circle diameter */
+  height: 60px;
+  background-color: red;  /* circle color */
+  border-radius: 50%;     /* makes it a circle */
+  display: flex;          /* center icon */
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.feature-section h1{
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+
+.feature-section h2{
+    font-size: 16px;
+    margin-bottom: 44px;
+    color: #627382;
+    font-weight: normal;
+}
+
+.solution-section{
+    display:flex;
+    gap: 70px;
+    
+    margin: 120px auto;
+}
+
+.solution-details{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.solution-section h1{
+    margin-bottom: 10px;
+}
+.solution-section p{
+    margin-bottom: 40px;
+}
+
+.solution-section ul{
+    list-style: url(./assets/CheckCircle.png);
+    
+}
+
+.early-access-section{
+    background-color: #F7F6F2;
+    padding: 80px 0;
+}
+
+.early-access-section h2{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.early-access-section h3{
+    color: #627382;
+font-size: 16px;
+}
+
+.early-access-section button{
+    margin: 24px 0;
+}
+
+.early-access-section p{
+    font-size: 16px;
+}
