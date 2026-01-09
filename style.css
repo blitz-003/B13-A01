@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   font-family: "Inter", sans-serif;
 }
 
 /* common css */
@@ -31,13 +32,15 @@ nav li{
 nav a{
     text-decoration: none;
     color: black;
+    font-weight: 500;
 }
 .btn-1{
-    background-color: #30B868;
+    background-color: #469165;
     border: none;
     border-radius: 4px;
     padding: 12.5px 16px;
     color: white;
+    font-size: 16px;
 }
 
 .banner{
@@ -64,24 +67,71 @@ nav a{
     font-size: 72px;
 }
 
-.banner h2 span:nth-of-type(1){
+.banner-inside h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between circles and text */
+}
+
+.circle-container {
+  position: relative;
+  width: 16px;   /* largest circle size */
+  height: 16px;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.circle.small {
+  width: 6px;
+  height: 6px;
+  background: rgba(70, 145, 101, 1);
+}
+
+.circle.medium {
+  width: 12px;
+  height: 12px;
+  background: rgba(70, 145, 101, 0.4);
+}
+
+.circle.largest {
+  width: 16px;
+  height: 16px;
+  background: rgba(70, 145, 101, 0.2);
+}
+
+.banner-inside h2{
     font-size: 16px;
+    font-weight: 500;
     color: #30B868;
    border-radius: 1000px;
 background: rgba(255, 255, 255, 1);
 padding: 6px 12px;
+max-width: max-content;
+margin: 0 auto;
 }
 
 .banner h1 span:nth-of-type(1){
     font-size: 72px;
     color: white;
+    font-size: 72px;
+font-weight: 700;
+
 
 }
 
 
 .banner h1 span:nth-of-type(2){
-    font-size: 72px;
+
     color: #30B868;
+    font-size: 72px;
+font-weight: 700;
+line-height: 84px;
 
 }
 
@@ -89,6 +139,8 @@ padding: 6px 12px;
 .banner p{
     font-size: 18px;
     color: white;
+    font-weight:400;
+    line-height: 24px;
 
 }
 
@@ -101,13 +153,22 @@ padding: 6px 12px;
 }
 
 .banner button:nth-of-type(2){
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 4px;
-    padding: 12.5px 16px;
-    color: white; 
+   display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+.triangle-outline {
+  height: 16px;         /* sets the height */
+  width: auto;           /* width scales proportionally */
+}
 .banner-button-class{
     display: flex;
     gap:16px;
@@ -117,35 +178,6 @@ padding: 6px 12px;
 
 .feature-section{
     padding-top: 50px;
-}
-
-
-.card-container{
-    display:flex;
-    gap: 24px;
-}
-
-.card{
-    width: 300px;
-    height: 280px;
-    padding: 24px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-circle {
-  width: 60px;            /* circle diameter */
-  height: 60px;
-  background-color: red;  /* circle color */
-  border-radius: 50%;     /* makes it a circle */
-  display: flex;          /* center icon */
-  justify-content: center;
-  align-items: center;
-  
 }
 
 .feature-section h1{
@@ -159,6 +191,45 @@ padding: 6px 12px;
     margin-bottom: 44px;
     color: #627382;
     font-weight: normal;
+}
+
+.card-container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start; /* top align all cards */
+}
+
+.card {
+  width: 300px;
+  height: 280px;       /* consistent height */
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* important fix */
+  gap: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.06);
+  background: white;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.card p{
+    color: rgba(98, 115, 130, 1);
 }
 
 .solution-section{
@@ -175,19 +246,35 @@ padding: 6px 12px;
     
 }
 
-
+.solution-section h2{
+    margin-bottom: 10px;
+    color:#30B868;
+    font-size: 16px;
+    font-weight: 700;
+}
 .solution-section h1{
     margin-bottom: 10px;
 }
 .solution-section p{
     margin-bottom: 40px;
+    font-size: 16px;
+    color: rgba(98, 115, 130, 1);
+
 }
 
 .solution-section ul{
     list-style: url(./assets/CheckCircle.png);
     
+    
 }
 
+
+.solution-section li{
+    font-size: 16px;
+    font-weight: 500;
+    
+    
+}
 .early-access-section{
     background-color: #F7F6F2;
     padding: 80px 0;
@@ -236,4 +323,18 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
+}
+
+button {
+  transition: transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;          
+
+
+}
+
+button:hover {
+  transform: scale(1.12);
+   cursor: pointer;
 }
