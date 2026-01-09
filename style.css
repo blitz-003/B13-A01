@@ -262,19 +262,32 @@ line-height: 84px;
 
 }
 
-.solution-section ul{
-    list-style: url(./assets/CheckCircle.png);
-    
-    
+.solution-section ul {
+    list-style: none; 
+    padding-left: 0;
 }
 
-
-.solution-section li{
+.solution-section li {
     font-size: 16px;
     font-weight: 500;
-    
-    
+    position: relative;              /* needed for pseudo-element */
+    padding-left: 28px;              /* space for the image */
+    margin-bottom: 12px;             /* spacing between items */
 }
+
+.solution-section li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);     /* vertically center */
+    width: 20px;                     /* image width */
+    height: 20px;                    /* image height */
+    background-image: url(./assets/CheckCircle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .early-access-section{
     background-color: #F7F6F2;
     padding: 80px 0;
@@ -283,11 +296,14 @@ line-height: 84px;
 .early-access-section h2{
     font-size: 40px;
     margin-bottom: 16px;
+    font-weight: 700;
 }
 
 .early-access-section h3{
     color: #627382;
-font-size: 16px;
+    font-size: 16px;
+font-weight: 400;
+line-height: 24px;
 }
 
 .early-access-section button{
@@ -295,7 +311,10 @@ font-size: 16px;
 }
 
 .early-access-section p{
+    color: #627382;
     font-size: 16px;
+font-weight: 400;
+line-height: 24px;
 }
 
 footer{
@@ -325,6 +344,17 @@ footer{
     margin-bottom: 80px;
 }
 
+.copy-right{
+    border-top: 1px solid rgba(229, 231, 235, 0.2);
+    padding: 30px 0 10px 0;
+     
+
+}
+
+.social-link{
+    font-size: 20px;
+    font-weight: 500;
+}
 button {
   transition: transform 0.2s ease;
   display: inline-flex;
