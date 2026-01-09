@@ -169,8 +169,8 @@ line-height: 84px;
 }
 
 .triangle-outline {
-  height: 16px;         /* sets the height */
-  width: auto;           /* width scales proportionally */
+  height: 16px;         
+  width: auto;           
 }
 .banner-button-class{
     display: flex;
@@ -199,17 +199,17 @@ line-height: 84px;
 .card-container {
   display: flex;
   gap: 24px;
-  align-items: flex-start; /* top align all cards */
+  align-items: flex-start; 
 }
 
 .card {
   width: 300px;
-  height: 280px;       /* consistent height */
+  height: 280px;      
   padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* important fix */
+  justify-content: center; 
   gap: 16px;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0,0,0,0.06);
@@ -273,9 +273,9 @@ line-height: 84px;
 .solution-section li {
     font-size: 16px;
     font-weight: 500;
-    position: relative;              /* needed for pseudo-element */
-    padding-left: 28px;              /* space for the image */
-    margin-bottom: 12px;             /* spacing between items */
+    position: relative;              
+    padding-left: 28px;              
+    margin-bottom: 12px;             
 }
 
 .solution-section li::before {
@@ -283,9 +283,9 @@ line-height: 84px;
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);     /* vertically center */
-    width: 20px;                     /* image width */
-    height: 20px;                    /* image height */
+    transform: translateY(-50%);     
+    width: 20px;                     
+    height: 20px;                    
     background-image: url(./assets/CheckCircle.png);
     background-size: contain;
     background-repeat: no-repeat;
