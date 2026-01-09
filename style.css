@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common css */
+.common-container{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+nav ul{
+    display: flex;
+    gap:32px;
+}
+nav li{
+    list-style: none;
+    display: inline;
+    /* padding-right: 32px; */
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.btn-1{
+    background-color: #30B868;
+    border: none;
+    border-radius: 4px;
+    padding: 12.5px 16px;
+    color: white;
+}
